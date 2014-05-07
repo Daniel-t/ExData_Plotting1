@@ -43,7 +43,7 @@ save_plot4<-function(filename='data/subsetted_data.txt'){
   labels<-weekdays(data$DateTime[at]+60,abbreviate=T)
   axis(1, labels=labels,at=at)
   axis(2, labels=seq(0,30,10),at=seq(0,30,10))
-  legend(legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),x="topright",lty=1,col=c("black","red","blue"),bty='n')
+  legend(legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),x="topright",lty=1,col=c("black","red","blue"),bty='n',cex=0.9)
   
   #plot 5
   with(data,plot(Global_reactive_power,type="l",labels=F,xlab="datetime",xaxp=c(1,l,2)))
